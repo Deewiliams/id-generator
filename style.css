@@ -6,5 +6,20 @@
     margin-top: 50px;
 }
 button{
-    margin-top: 20px;
+    margin-top: 16px;
+    padding: 10px;
+    width: 53vh;
+    background-color: #C2E7FF;
+    border-radius: 8px;
+    border: none;
+
+
+}
+
+input{
+    padding: 10px;
+    width: 50vh;
+    margin-top: 16px;
+    border-radius: 8px;
+
 }
