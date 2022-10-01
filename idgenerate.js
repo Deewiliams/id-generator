@@ -1,19 +1,8 @@
-// function getUser(){
-//     const inputValues = document.querySelector('#myForm').value;
-//     console.log('information',inputValues);
-//     let today = new Date();
-//     let year = today.getFullYear()
-//     let uniqueId = Date.now()
 
-//     const displayInfo = document.createElement("li");
-//     const textNode = document.createTextNode(inputValues + year + uniqueId);
-//     displayInfo.appendChild(textNode);
-//     document.getElementById('generatedId').appendChild(displayInfo);
-// }
 let today = new Date();
-let year = today.getFullYear();
-let dateNow = Date.now();
-let uniqueId = year + dateNow
+let YearCode = today.getFullYear();
+let idgeneration = Date.now();
+let uniqueId = YearCode + "" + idgeneration
 
 function getUser() {
     let fullName = document.getElementById("fullName").value;
@@ -24,7 +13,7 @@ function getUser() {
     let mobile = document.getElementById("mobile").value;
 
   const displayInfo = document.createElement("li");
-    const textNode = document.createTextNode(fullName + age + gender + address + state + mobile);
+    const textNode = document.createTextNode(fullName + age + gender + address + state + mobile + uniqueId);
     displayInfo.appendChild(textNode);
     document.getElementById('generatedId').appendChild(displayInfo);
 }
