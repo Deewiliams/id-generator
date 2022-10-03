@@ -26,17 +26,12 @@ function getUser() {
 
     const clone = template.content.cloneNode(true);
 
-    clone.querySelector(".template-city").textContent =  inputStorage[i].fullname;
-    clone.querySelector(".template-country").textContent = inputStorage[i].age;
+    clone.querySelector(".template-name").textContent =  inputStorage[i].fullname;
+    clone.querySelector(".template-age").textContent = inputStorage[i].age;
+    clone.querySelector(".template-gender").textContent = inputStorage[i].gender;
+    clone.querySelector(".template-address").textContent = inputStorage[i].state;
+    clone.querySelector(".template-mobile").textContent = inputStorage[i].mobile;
+    clone.querySelector(".template-uniqueId").textContent = inputStorage[i].uniqueId;
     lists.append(clone);
   }
-
-  // var displayInfo = document.createElement(`
-  // <table>
-
-  // </table>
-  // `);
-  // const textNode = document.createTextNode(fullName + "" + age + "" + gender + "" + address + "" +  state + "" + mobile + "" + uniqueId);
-  // displayInfo.appendChild(textNode);
-  // document.getElementById('generatedId').appendChild(displayInfo);
 }

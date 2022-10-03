@@ -21,14 +21,18 @@ input {
   border-radius: 8px;
 }
 
-#generatedId {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-inline-start: auto;
-  
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
-#generatedId li {
-    display: inline-flex;
 
-    
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
