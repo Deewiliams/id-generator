@@ -1,5 +1,5 @@
 body{
-  background-image: url(./background.jpeg);
+  background-image: url(./wall.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,6 +12,12 @@ body{
 }
 h1{
   text-align: center;
+}
+select {
+  padding: 10px;
+  width: 53vh;
+  margin-top: 16px;
+  border-radius: 8px;
 }
 button {
   margin-top: 16px;
@@ -35,15 +41,21 @@ table {
   width: 100%;
   margin-top: 50px;
 }
+th{
+  color: white;
+}
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
+td{
+  color: white;
+}
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #352d2d;
 }
 .delete{
   text-align: center;
