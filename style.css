@@ -1,9 +1,13 @@
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
+}
+h1{
+  text-align: center;
 }
 button {
   margin-top: 16px;

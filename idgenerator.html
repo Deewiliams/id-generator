@@ -8,7 +8,8 @@
     <title>id generator</title>
 </head>
 <body>
-    <div class="container">
+ <h1>Id generator project</h1>
+    <div class="container" >
         <input id = "fullName" placeholder="Full name" />
         <input id = "age" type = "number" placeholder="Age" />
         <input id = "gender" type = "text" placeholder="Gender" />
@@ -32,7 +33,7 @@
     </table>
   
     <template id="template">
-            <tr>
+            <tr id="delete">
               <td class="template-name"></td>
               <td class="template-age"></td>
               <td class="template-gender"></td>
@@ -40,15 +41,8 @@
               <td class="template-state"></td>
               <td class="template-mobile"></td>
               <td class="template-uniqueId"></td>
-              <td class="delete">X</td>
+              <td class="delete" onclick="deleteFunction()">X</td>
             </tr>
-            
-           
-          
-          <!-- <li class="template-list">
-              <p class="template-city"></p>
-              <p class="template-country"></p>
-          </li> -->
       </template>
     </div>
     <script src="./idgenerate.js"></script>

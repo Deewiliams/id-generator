@@ -22,7 +22,7 @@ function getUser() {
     mobile: mobile,
     uniqueId: uniqueId,
   });
-
+  
   for (let i = 0; i < inputStorage.length; i++) {
     const template = document.querySelector("#template");
     const lists = document.querySelector(".lists");
@@ -43,4 +43,9 @@ function getUser() {
       inputStorage[i].uniqueId;
     lists.append(clone);
   }
+}
+
+function deleteFunction() {
+  const element = document.getElementById("delete");
+  element.remove();
 }
